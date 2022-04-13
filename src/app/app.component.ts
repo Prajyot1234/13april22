@@ -8,4 +8,8 @@ import { User } from './models/user';
 })
 export class AppComponent {
   users: User[] = []
+
+  addUser(user: User){
+    this.users.push(user);
+  }
 }

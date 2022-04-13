@@ -1,7 +1,7 @@
 <div class="add-user-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name">
-    <label for="age">Age:</label>
-    <input type="text" id="age">
-    <button>Add User</button>
-  </div>
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="newName">
+  <label for="email">email:</label>
+  <input type="text" id="email" [(ngModel)]="newEmail">
+  <button (click)="saveUser()">Add User</button>
+</div>
